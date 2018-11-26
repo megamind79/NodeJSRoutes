@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>File upload Node.</title>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script> -->
+  </head>
+  <body>
+      <form id="uploadForm"
+          enctype="multipart/form-data"
+          action="/Service/mainCode/server"
+          method="post">
+      <input id = "userPhotos" type="file" name="userPhotos" multiple />
+      <input type="submit" value="Upload Image" name="submit">
+      <input type='text' id='random' name='random'><br>
+      <span id = "status"></span>
+    </form>
+  </body>
+</html>
